@@ -20,7 +20,7 @@ import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecn
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
-    path: '', component: NavComponent, canActivate: [AuthGuard], children: [
+    path: '', component: NavComponent, children: [
       { path: 'home', component: HomeComponent },
 
       { path: 'tecnicos',            component:   TecnicoListComponent },
